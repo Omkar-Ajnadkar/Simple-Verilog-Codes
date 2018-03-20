@@ -1,0 +1,48 @@
+$date
+	Tue Jan 23 16:11:06 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module decoder2_to_4_tb $end
+$var wire 1 ! d3 $end
+$var wire 1 " d2 $end
+$var wire 1 # d1 $end
+$var wire 1 $ d0 $end
+$var reg 1 % a0 $end
+$var reg 1 & a1 $end
+$scope module myDecoder $end
+$var wire 1 % a0 $end
+$var wire 1 & a1 $end
+$var wire 1 $ d0 $end
+$var wire 1 # d1 $end
+$var wire 1 " d2 $end
+$var wire 1 ! d3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0&
+0%
+0$
+0#
+0"
+1!
+$end
+#1000
+0!
+1"
+1%
+#2000
+0"
+1$
+1&
+#3000
+1#
+0$
+0%
+#4000
