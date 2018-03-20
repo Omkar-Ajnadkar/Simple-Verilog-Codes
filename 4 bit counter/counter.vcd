@@ -1,0 +1,113 @@
+$date
+	Tue Feb 06 14:45:02 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module counter_tb $end
+$var wire 4 ! counter [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # reset $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 4 $ counter [3:0] $end
+$var wire 1 # reset $end
+$var reg 4 % counter_up [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 %
+b0 $
+0#
+0"
+b0 !
+$end
+#50
+b1 !
+b1 $
+b1 %
+1"
+#100
+b0 !
+b0 $
+b0 %
+0"
+1#
+#110
+0#
+#150
+b1 !
+b1 $
+b1 %
+1"
+#200
+0"
+#250
+b10 !
+b10 $
+b10 %
+1"
+#300
+0"
+#350
+b11 !
+b11 $
+b11 %
+1"
+#400
+0"
+#450
+b100 !
+b100 $
+b100 %
+1"
+#500
+0"
+#550
+b101 !
+b101 $
+b101 %
+1"
+#600
+0"
+#650
+b110 !
+b110 $
+b110 %
+1"
+#700
+0"
+#750
+b111 !
+b111 $
+b111 %
+1"
+#800
+0"
+#850
+b1000 !
+b1000 $
+b1000 %
+1"
+#900
+0"
+#950
+b1001 !
+b1001 $
+b1001 %
+1"
+#1000
+0"
+#1050
+b1010 !
+b1010 $
+b1010 %
+1"
+#1100
+0"
+#1110
