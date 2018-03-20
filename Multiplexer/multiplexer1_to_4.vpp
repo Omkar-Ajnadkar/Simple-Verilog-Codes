@@ -1,0 +1,115 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 10;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00000000047f0880 .scope module, "multiplexer1_to_4_tb" "multiplexer1_to_4_tb" 2 4;
+ .timescale -9 -10;
+v0000000004844880_0 .var "a", 0 0;
+v0000000004844380_0 .var "b", 0 0;
+v0000000004844560_0 .var "c", 0 0;
+v0000000004844d80_0 .var "d", 0 0;
+v00000000048446a0_0 .var "s0", 0 0;
+v0000000004844740_0 .var "s1", 0 0;
+v0000000004844920_0 .net "z", 0 0, L_0000000004846640;  1 drivers
+S_00000000001fe920 .scope module, "uut" "multiplexer1_to_4" 2 18, 3 3 0, S_00000000047f0880;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "a"
+    .port_info 1 /INPUT 1 "b"
+    .port_info 2 /INPUT 1 "c"
+    .port_info 3 /INPUT 1 "d"
+    .port_info 4 /INPUT 1 "s0"
+    .port_info 5 /INPUT 1 "s1"
+    .port_info 6 /OUTPUT 1 "z"
+L_00000000047f3230 .functor AND 1, v0000000004844880_0, L_0000000004845200, L_0000000004845270, C4<1>;
+L_0000000004845200 .functor NOT 1, v00000000048446a0_0, C4<0>, C4<0>, C4<0>;
+L_0000000004845270 .functor NOT 1, v0000000004844740_0, C4<0>, C4<0>, C4<0>;
+L_00000000048462f0 .functor AND 1, v0000000004844380_0, v00000000048446a0_0, L_0000000004846360, C4<1>;
+L_0000000004846360 .functor NOT 1, v0000000004844740_0, C4<0>, C4<0>, C4<0>;
+L_00000000048463d0 .functor AND 1, v0000000004844560_0, L_00000000048464d0, v0000000004844740_0, C4<1>;
+L_00000000048464d0 .functor NOT 1, v00000000048446a0_0, C4<0>, C4<0>, C4<0>;
+L_00000000048465d0 .functor AND 1, v0000000004844d80_0, v00000000048446a0_0, v0000000004844740_0, C4<1>;
+L_0000000004846640 .functor OR 1, L_00000000047f3230, L_00000000048462f0, L_00000000048463d0, L_00000000048465d0;
+v00000000047f0400_0 .net *"_s1", 0 0, L_0000000004845200;  1 drivers
+v00000000047f30f0_0 .net *"_s3", 0 0, L_0000000004845270;  1 drivers
+v00000000047f3190_0 .net *"_s6", 0 0, L_0000000004846360;  1 drivers
+v00000000001feaa0_0 .net *"_s9", 0 0, L_00000000048464d0;  1 drivers
+v00000000001feb40_0 .net "a", 0 0, v0000000004844880_0;  1 drivers
+v00000000001febe0_0 .net "b", 0 0, v0000000004844380_0;  1 drivers
+v00000000001fec80_0 .net "c", 0 0, v0000000004844560_0;  1 drivers
+v0000000004844150_0 .net "d", 0 0, v0000000004844d80_0;  1 drivers
+v00000000048447e0_0 .net "s0", 0 0, v00000000048446a0_0;  1 drivers
+v0000000004844420_0 .net "s1", 0 0, v0000000004844740_0;  1 drivers
+v0000000004844600_0 .net "temp1", 0 0, L_00000000047f3230;  1 drivers
+v0000000004844e20_0 .net "temp2", 0 0, L_00000000048462f0;  1 drivers
+v00000000048444c0_0 .net "temp3", 0 0, L_00000000048463d0;  1 drivers
+v0000000004844c40_0 .net "temp4", 0 0, L_00000000048465d0;  1 drivers
+v0000000004845140_0 .net "z", 0 0, L_0000000004846640;  alias, 1 drivers
+    .scope S_00000000047f0880;
+T_0 ;
+    %vpi_call 2 29 "$dumpfile", "multiplexer1_to_4.vcd" {0 0 0};
+    %vpi_call 2 30 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000000047f0880 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000004844880_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000004844380_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000004844560_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000004844d80_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000048446a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000004844740_0, 0, 1;
+    %delay 1000, 0;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000004844880_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000048446a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000004844880_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000004844380_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000004844740_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000048446a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000004844380_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000004844560_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000004844740_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000048446a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000004844560_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000004844d80_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000004844740_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000048446a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000004844d80_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_00000000047f0880;
+T_1 ;
+    %vpi_call 2 52 "$monitor", "s0:%d, s1:%d, a:%d, b:%d, c:%d, d:%d, z: %d\012\012", v00000000048446a0_0, v0000000004844740_0, v0000000004844880_0, v0000000004844380_0, v0000000004844560_0, v0000000004844d80_0, v0000000004844920_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "multiplexer1_to_4_tb.v";
+    "./multiplexer1_to_4.v";

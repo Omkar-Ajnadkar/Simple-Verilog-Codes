@@ -1,0 +1,75 @@
+$date
+	Mon Feb 12 22:39:44 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module multiplexer1_to_4_tb $end
+$var wire 1 ! z $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ c $end
+$var reg 1 % d $end
+$var reg 1 & s0 $end
+$var reg 1 ' s1 $end
+$scope module uut $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 $ c $end
+$var wire 1 % d $end
+$var wire 1 & s0 $end
+$var wire 1 ' s1 $end
+$var wire 1 ( temp1 $end
+$var wire 1 ) temp2 $end
+$var wire 1 * temp3 $end
+$var wire 1 + temp4 $end
+$var wire 1 ! z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#2000
+1!
+1(
+1"
+#3000
+0(
+1)
+1#
+0"
+1&
+#4000
+1*
+0)
+1$
+0#
+0&
+1'
+#5000
+0*
+1+
+1%
+0$
+1&
+#6000
+0!
+0+
+0%
+0&
+0'
